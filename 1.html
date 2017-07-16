@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<!-- 屏幕和设备的屏幕一致，初始缩放为1:1，禁止用户缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Document</title>
+	<!-- 引入外部的bt中的css文件 -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<!-- 必须先引入jq之后再引入js -->
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<!-- 再引入bt.js文件 -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="background:gray">
+	<div class="container" style="background:red">
+		普通标题：固定宽度 1170px
+		<!-- 标题分隔线 -->
+		<h1 class="page-header">固定宽度 1170px</h1>
+		<h2>固定宽度 1170px</h2>
+		<h3>固定宽度 1170px</h3>
+		<h4>固定宽度 1170px</h4>
+		<h5>固定宽度 1170px</h5>
+		<h6>固定宽度 1170px</h6>
+	</div>
+	<div class="container-fluid" style="background:white">
+		普通标题：宽度为100%
+		<!-- 标题下划线 -->
+		<h1 class="page-header">36px</h1>
+		<h2 class="text-center">30px</h2>
+		<h3 class="text-right">24px</h3>
+		<h4 class="text-left">18px</h4>
+		<h5>14px</h5>
+		<h6>12px</h6>
+		<!-- 排版的标签 -->
+		<h1 class="page-header">新闻<small>内</small><big>容</big></h1>
+		<p class="text-uppercase">
+			<strong>jdsaidhsahidhsaihd</strong><em>可伸缩性是高性能</em>、<del>低成本和可维护性等诸多因素的综合考量和平衡</del>，可伸缩性讲究平滑线性的性能提升，更侧重于系统的水平伸缩，通过廉价的服务器实现分布式计算；而普通性能优化只是单台机器的性能指标优化。他们共同点都是根据应用系统特点在吞吐量和延迟之间进行一个侧重选择，当然水平伸缩分区后会带来CAP定理约束。
+		</p>
+		<h3 class="page-header">列表</h3>
+			<ul class="list-unstyled list-inline">
+				<li>html</li>
+				<li>css</li>
+				<li>php</li>
+				<li>mysql</li>
+			</ul>
+		<h3 class="page-header">自定义列表</h3>
+			<dl class="dl-horizontal">
+				<dt></dt>
+				<dd></dd>
+				<dd></dd>
+				<dd></dd>
+			</dl>
+	</div>
+</body>
+</html>
