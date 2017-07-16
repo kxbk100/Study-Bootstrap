@@ -11,6 +11,11 @@
 	<script src="bootstrap/js/jquery.min.js"></script>
 	<!-- 再引入bt.js文件 -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css" media="screen">
+		div[class*="col-"]{
+			border:1px solid blue;
+		}
+	</style>
 </head>
 <body style="background:gray">
 	<div class="container" style="background:red">
@@ -46,11 +51,68 @@
 			</ul>
 		<h3 class="page-header">自定义列表</h3>
 			<dl class="dl-horizontal">
-				<dt></dt>
-				<dd></dd>
-				<dd></dd>
-				<dd></dd>
+				<dt>标题</dt>
+				<dd>标题解释</dd>
 			</dl>
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-striped table-condensed">
+				<tr class="active">
+					<td>编号</td>
+					<td>产品名称</td>
+					<td>状态</td>
+				</tr>
+				<tr class="success">
+					<td>001</td>
+					<td>奥迪</td>
+					<td>未发货</td>
+				</tr>
+				<tr class="info">
+					<td>002</td>
+					<td>奥拓</td>
+					<td>已发货</td>
+				</tr>
+				<tr class="warning">
+					<td>003</td>
+					<td>艾玛</td>
+					<td>已退货</td>
+				</tr>
+				<tr class="danger">
+					<td>004</td>
+					<td>绿箭</td>
+					<td>未接收</td>
+				</tr>
+			</table>
+		</div>
+		<img src="images/1.jpg" class="img-responsive img-thumbnail" />
+		<h3 class="page-header">响应式布局1</h3>
+		<div class="row">
+			<div class="col-md-1">col-md-1</div>
+			<div class="col-md-1">col-md-2</div>
+			<div class="col-md-1">col-md-3</div>
+			<div class="col-md-1">col-md-4</div>
+			<div class="col-md-1">col-md-5</div>
+			<div class="col-md-1">col-md-6</div>
+			<div class="col-md-1">col-md-7</div>
+			<div class="col-md-1">col-md-8</div>
+			<div class="col-md-1">col-md-9</div>
+			<div class="col-md-1">col-md-10</div>
+			<div class="col-md-1">col-md-11</div>
+			<div class="col-md-1">col-md-12</div>
+			<div class="col-md-1">col-md-13</div>
+		</div>
+		<h3 class="page-header">响应式布局2</h3>
+		<div class="row">
+			<div class="col-md-4">33</div>
+			<div class="col-md-4">33</div>
+			<div class="col-md-4">33</div>
+		</div>
+		<h3 class="page-header">响应式布局3</h3>
+		<div class="row">
+			<div class="col-md-3 col-xs-6 col-sm-4">33</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">33</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">33</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">33</div>
+		</div>
 	</div>
 </body>
 </html>
