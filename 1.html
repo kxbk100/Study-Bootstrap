@@ -1,140 +1,367 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<!-- 屏幕和设备的屏幕一致，初始缩放为1:1，禁止用户缩放 -->
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<title>Document</title>
-	<!-- 引入外部的bt中的css文件 -->
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-	<!-- 必须先引入jq之后再引入js -->
-	<script src="bootstrap/js/jquery.min.js"></script>
-	<!-- 再引入bt.js文件 -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<style type="text/css" media="screen">
-		div[class*="col-"]{
-			border:1px solid blue;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <!-- 屏幕和设备的屏幕一致，初始缩放为1:1，禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    <!-- 引入外部的bt中的css文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- 必须先引入jq之后再引入js -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <!-- 再引入bt.js文件 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        div[class*="col-"] {
+            border: 1px solid blue;
+        }
+    </style>
 </head>
 <body style="background:gray">
-	<div class="container" style="background:red">
-		普通标题：固定宽度 1170px
-		<!-- 标题分隔线 -->
-		<h1 class="page-header">固定宽度 1170px</h1>
-		<h2>固定宽度 1170px</h2>
-		<h3>固定宽度 1170px</h3>
-		<h4>固定宽度 1170px</h4>
-		<h5>固定宽度 1170px</h5>
-		<h6>固定宽度 1170px</h6>
-	</div>
-	<div class="container-fluid" style="background:white">
-		普通标题：宽度为100%
-		<!-- 标题下划线 -->
-		<h1 class="page-header">36px</h1>
-		<h2 class="text-center">30px</h2>
-		<h3 class="text-right">24px</h3>
-		<h4 class="text-left">18px</h4>
-		<h5>14px</h5>
-		<h6>12px</h6>
-		<!-- 排版的标签 -->
-		<h1 class="page-header">新闻<small>内</small><big>容</big></h1>
-		<p class="text-uppercase">
-			<strong>jdsaidhsahidhsaihd</strong><em>可伸缩性是高性能</em>、<del>低成本和可维护性等诸多因素的综合考量和平衡</del>，可伸缩性讲究平滑线性的性能提升，更侧重于系统的水平伸缩，通过廉价的服务器实现分布式计算；而普通性能优化只是单台机器的性能指标优化。他们共同点都是根据应用系统特点在吞吐量和延迟之间进行一个侧重选择，当然水平伸缩分区后会带来CAP定理约束。
-		</p>
-		<h3 class="page-header">列表</h3>
-		<ul class="list-unstyled list-inline">
-			<li>html</li>
-			<li>css</li>
-			<li>php</li>
-			<li>mysql</li>
-		</ul>
-		<h3 class="page-header">自定义列表</h3>
-		<dl class="dl-horizontal">
-			<dt>标题</dt>
-			<dd>标题解释</dd>
-		</dl>
-		<div class="table-responsive">
-			<table class="table table-bordered table-hover table-striped table-condensed">
-				<tr class="active">
-					<td>编号</td>
-					<td>产品名称</td>
-					<td>状态</td>
-				</tr>
-				<tr class="success">
-					<td>001</td>
-					<td>奥迪</td>
-					<td>未发货</td>
-				</tr>
-				<tr class="info">
-					<td>002</td>
-					<td>奥拓</td>
-					<td>已发货</td>
-				</tr>
-				<tr class="warning">
-					<td>003</td>
-					<td>艾玛</td>
-					<td>已退货</td>
-				</tr>
-				<tr class="danger">
-					<td>004</td>
-					<td>绿箭</td>
-					<td>未接收</td>
-				</tr>
-			</table>
-		</div>
-		<img src="images/1.jpg" class="img-responsive img-thumbnail" />
-		<h3 class="page-header">响应式布局1</h3>
-		<div class="row">
-			<div class="col-md-1">col-md-1</div>
-			<div class="col-md-1">col-md-2</div>
-			<div class="col-md-1">col-md-3</div>
-			<div class="col-md-1">col-md-4</div>
-			<div class="col-md-1">col-md-5</div>
-			<div class="col-md-1">col-md-6</div>
-			<div class="col-md-1">col-md-7</div>
-			<div class="col-md-1">col-md-8</div>
-			<div class="col-md-1">col-md-9</div>
-			<div class="col-md-1">col-md-10</div>
-			<div class="col-md-1">col-md-11</div>
-			<div class="col-md-1">col-md-12</div>
-			<div class="col-md-1">col-md-13</div>
-		</div>
-		<h3 class="page-header">响应式布局2</h3>
-		<div class="row">
-			<div class="col-md-4">33</div>
-			<div class="col-md-4">33</div>
-			<div class="col-md-4">33</div>
-		</div>
-		<h3 class="page-header">响应式布局3</h3>
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/1.jpg" class="img-responsive" />
-				<p>	栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则 col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/1.jpg" class="img-responsive" />
-				<p>	栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则 col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/1.jpg" class="img-responsive" />
-				<p>	栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则 col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<img src="images/1.jpg" class="img-responsive" />
-				<p>	栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则 col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
-			</div>
-		</div>
-		<h3 class="page-header">偏移</h3>
-		<div class="row">
-			<div class="col-md-4">4444</div>
-			<div class="col-md-4 col-md-offset-5">222</div>
-		</div>
-		<h3 class="page-header">排序</h3>
-		<div class="row">
-			<div class="col-md-4 col-md-push-8">444</div>
-			<div class="col-md-8 col-md-pull-4">88888</div>
-		</div>
-	</div>
+<div class="container" style="background:red">
+    普通标题：固定宽度 1170px
+    <!-- 标题分隔线 -->
+    <h1 class="page-header">固定宽度 1170px</h1>
+    <h2>固定宽度 1170px</h2>
+    <h3>固定宽度 1170px</h3>
+    <h4>固定宽度 1170px</h4>
+    <h5>固定宽度 1170px</h5>
+    <h6>固定宽度 1170px</h6>
+    <div class="top clearfix">
+        <div class="pull-right">Right</div>
+        <div class="left">Left</div>
+    </div>
+</div>
+<div class="container-fluid" style="background:white">
+    普通标题：宽度为100%
+    <!-- 标题下划线 -->
+    <h1 class="page-header">36px</h1>
+    <h2 class="text-center">30px</h2>
+    <h3 class="text-right">24px</h3>
+    <h4 class="text-left">18px</h4>
+    <h5>14px</h5>
+    <h6>12px</h6>
+    <!-- 排版的标签 -->
+    <h1 class="page-header">新闻
+        <small>内</small>
+        <big>容</big></h1>
+    <p class="text-uppercase">
+        <strong>jdsaidhsahidhsaihd</strong><em>可伸缩性是高性能</em>、
+        <del>低成本和可维护性等诸多因素的综合考量和平衡</del>
+        ，可伸缩性讲究平滑线性的性能提升，更侧重于系统的水平伸缩，通过廉价的服务器实现分布式计算；而普通性能优化只是单台机器的性能指标优化。他们共同点都是根据应用系统特点在吞吐量和延迟之间进行一个侧重选择，当然水平伸缩分区后会带来CAP定理约束。
+    </p>
+    <h3 class="page-header">列表</h3>
+    <ul class="list-unstyled list-inline">
+        <li>html</li>
+        <li>css</li>
+        <li>php</li>
+        <li>mysql</li>
+    </ul>
+    <h3 class="page-header">自定义列表</h3>
+    <dl class="dl-horizontal">
+        <dt>标题</dt>
+        <dd>标题解释</dd>
+    </dl>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped table-condensed">
+            <tr class="active">
+                <td>编号</td>
+                <td>产品名称</td>
+                <td>状态</td>
+            </tr>
+            <tr class="success">
+                <td>001</td>
+                <td>奥迪</td>
+                <td>未发货</td>
+            </tr>
+            <tr class="info">
+                <td>002</td>
+                <td>奥拓</td>
+                <td>已发货</td>
+            </tr>
+            <tr class="warning">
+                <td>003</td>
+                <td>艾玛</td>
+                <td>已退货</td>
+            </tr>
+            <tr class="danger">
+                <td>004</td>
+                <td>绿箭</td>
+                <td>未接收</td>
+            </tr>
+        </table>
+    </div>
+    <img src="images/1.jpg" class="img-responsive img-thumbnail"/>
+    <h3 class="page-header">响应式布局1</h3>
+    <div class="row">
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-2</div>
+        <div class="col-md-1">col-md-3</div>
+        <div class="col-md-1">col-md-4</div>
+        <div class="col-md-1">col-md-5</div>
+        <div class="col-md-1">col-md-6</div>
+        <div class="col-md-1">col-md-7</div>
+        <div class="col-md-1">col-md-8</div>
+        <div class="col-md-1">col-md-9</div>
+        <div class="col-md-1">col-md-10</div>
+        <div class="col-md-1">col-md-11</div>
+        <div class="col-md-1">col-md-12</div>
+        <div class="col-md-1">col-md-13</div>
+    </div>
+    <h3 class="page-header">响应式布局2</h3>
+    <div class="row">
+        <div class="col-md-4">33</div>
+        <div class="col-md-4">33</div>
+        <div class="col-md-4">33</div>
+    </div>
+    <h3 class="page-header">响应式布局3</h3>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <img src="images/1.jpg" class="img-responsive"/>
+            <p> 栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则
+                col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <img src="images/1.jpg" class="img-responsive"/>
+            <p> 栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则
+                col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <img src="images/1.jpg" class="img-responsive"/>
+            <p> 栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则
+                col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <img src="images/1.jpg" class="img-responsive"/>
+            <p> 栅格系统将浏览器窗口自动分配最多12列，栅格系统是由行row和列col，col超出12自动换到下一行，所有的col都要放在row里面需要3列则
+                col-md-12/3即col-md-4栅格参数：如果想做成响应式效果，使用栅格系统参数。</p>
+        </div>
+    </div>
+    <h3 class="page-header">偏移</h3>
+    <div class="row">
+        <div class="col-md-4">4444</div>
+        <div class="col-md-4 col-md-offset-5">222</div>
+    </div>
+    <h3 class="page-header">排序</h3>
+    <div class="row">
+        <div class="col-md-4 col-md-push-8">444</div>
+        <div class="col-md-8 col-md-pull-4">88888</div>
+    </div>
+    <form class="form-horizontal">
+        <!--复选框-->
+        <div class="form-group">
+            <lable for="cemail">邮箱</lable>
+            <input type="email" name="cemail" id="cemail" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="pwd">密码</label>
+            <input type="password" name="pwd" id="pwd" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tel">手机号</label>
+            <input type="text" name="tel" id="tel" class="form-control">
+        </div>
+        <div class="form-group">
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">音乐</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">旅游</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">睡觉</label>
+            <label class="checkbox-inline disabled"><input type="checkbox" name="hobby" disabled>敲代码</label>
+        </div>
+        <!--单选框-->
+        <div class="form-group">
+            <label class="radio-inline"><input type="radio" name="sex" value="男">男</label>
+            <label class="radio-inline disabled"><input type="radio" name="sex" value="女" disabled>女</label>
+        </div>
+        <!--输入框组-->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">搜索</span>
+                <input type="search" name="sc" id="sc" class="form-control">
+            </div>
+        </div>
+        <!--输入框组-->
+        <div class="form-group">
+            <div class="input-group">
+                <input type="search" name="sc" id="sc" class="form-control">
+                <div class="input-group-addon">查询内容</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" name="username" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 col-sm-2 col-xs-12 text-left">查询内容</label>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <input type="search" name="sc" id="sc" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pwd" class="col-md-2 col-sm-2 col-xs-12 text-left">密码</label>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <input type="password" name="pwd" id="pwd" class="form-control">
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-danger">确定要删除吗</button>
+    <input type="button" value="修改" class="btn btn-primary">
+    <a href="#" class="btn btn-warning btn-lg">修改内容</a>
+    <a href="#" class="btn btn-success btn-sm">修改内容</a>
+    <a href="#" class="btn btn-default btn-xs">修改内容</a>
+    <a href="#" class="btn btn-warning active">修改内容</a>
+    <a href="#" class="btn btn-success active">修改内容</a>
+    <a href="#" class="btn btn-default active">修改内容</a>
+    <!--按钮组-->
+    <div class="btn-group">
+        <button class="btn btn-primary">按钮内容</button>
+        <button class="btn btn-warning">按钮内容</button>
+        <button class="btn btn-danger">按钮内容</button>
+    </div>
+    <!--缩略图-->
+    <div class="row">
+        <!--开头-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail">
+                <img src="images/1.jpg" class="img-responsive" alt="">
+                <div class="caption">
+                    <h3 class="bg-info">Thumbnail label</h3>
+                    <p class="text-muted">
+                        Thumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-success btn-xs">去看看</button>
+                    <button class="btn btn-info btn-xs">去购买</button>
+                </div>
+            </div>
+        </div>
+        <!--结尾-->
+        <!--开头-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail">
+                <img src="images/1.jpg" class="img-responsive" alt="">
+                <div class="caption">
+                    <h3 class="bg-info">Thumbnail label</h3>
+                    <p class="text-muted">
+                        Thumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-success btn-xs">去看看</button>
+                    <button class="btn btn-info btn-xs">去购买</button>
+                </div>
+            </div>
+        </div>
+        <!--结尾-->
+        <!--开头-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail">
+                <img src="images/1.jpg" class="img-responsive" alt="">
+                <div class="caption">
+                    <h3 class="bg-info">Thumbnail label</h3>
+                    <p class="text-muted">
+                        Thumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-success btn-xs">去看看</button>
+                    <button class="btn btn-info btn-xs">去购买</button>
+                </div>
+            </div>
+        </div>
+        <!--结尾-->
+        <!--开头-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail">
+                <img src="images/1.jpg" class="img-responsive" alt="">
+                <div class="caption">
+                    <h3 class="bg-info">Thumbnail label</h3>
+                    <p class="text-muted">
+                        Thumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-success btn-xs">去看看</button>
+                    <button class="btn btn-info btn-xs">去购买</button>
+                </div>
+            </div>
+        </div>
+        <!--结尾-->
+        <!--开头-->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail">
+                <img src="images/1.jpg" class="img-responsive" alt="">
+                <div class="caption">
+                    <h3 class="bg-info">Thumbnail label</h3>
+                    <p class="text-muted">
+                        Thumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail labelThumbnail.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-success btn-xs">去看看</button>
+                    <button class="btn btn-info btn-xs">去购买</button>
+                </div>
+            </div>
+        </div>
+        <!--结尾-->
+    </div>
+    <h2 class="page-header">下拉列表</h2>
+    <div class="dropdown">
+        <button class="btn btn-default" data-toggle="dropdown">登录 <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#"></a>qq登录</li>
+            <li><a href="#"></a>微信登录</li>
+            <li class="divider"></li>
+            <li><a href="#"></a>邮箱登录</li>
+            <li><a href="#"></a>手机登录</li>
+            <li><a href="#"></a>微博登录</li>
+        </ul>
+    </div>
+    <h2 class="page-header">标签页1</h2>
+    <ul class="nav nav-tabs">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+    </ul>
+    <h2 class="page-header">标签页2</h2>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+    </ul>
+    <h2 class="page-header">标签页3</h2>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+    </ul>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#"><img src="images/logo.png" alt="" height="50"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 class="page-header">分页</h2>
+    <div class="">
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
