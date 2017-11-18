@@ -175,3 +175,9 @@ background-size: cover;
 ```html
 <if condition="$student.is_searched eq 1">已查询<else/>未查询</if></td>
 ```
+
+- thinkphp无法访问
+> 可能保存了带bom的utf编码
+
+- thinkphp部署到iis服务器
+> 将runtime设定到支持写入的目录
