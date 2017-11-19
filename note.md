@@ -181,3 +181,23 @@ background-size: cover;
 
 - thinkphp部署到iis服务器
 > 将runtime设定到支持写入的目录
+
+- input/select/textarea/... + .form-control
+
+- .form-group
+> 单独的表单控件会被自动赋予一些全局样式。所有设置了`.form-control`类的`<input>、<textarea>和<select>`元素都将被默认设置宽度属性为`width: 100%;`。将`label`元素和前面提到的控件包裹在`.form-group`中可以获得最好的排列
+
+- 响应式表格
+> 将任何 .table 元素包裹在`<div class="table-responsive">`元素内
+
+- 垂直方向的内容截断
+> 响应式表格使用了 overflow-y: hidden 属性，这样就能将超出表格底部和顶部的内容截断。特别是，也可以截断下拉菜单和其他第三方组件
+
+- .form-inline
+> - 输入框和单选/多选框控件默认被设置为 width: 100%; 宽度。在内联表单，我们将这些元素的宽度设置为 width: auto;，因此，多个控件可以排列在同一行。根据布局需求，手动设置宽度
+> - 一定要添加 label 标签，对于内联表单，可以通过为label设置.sr-only类将其隐藏。还有一些辅助技术提供label标签的替代方案，比如 aria-label、aria-labelledby 或 title 属性
+
+- .form-horizontal
+> 无需再添加.row了
+
+
