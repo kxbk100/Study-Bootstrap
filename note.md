@@ -200,4 +200,17 @@ background-size: cover;
 - .form-horizontal
 > 无需再添加.row了
 
+- margin对span无效
+> - display:block;
+> - line-height
+
+- button后退
+```html
+<button class="btn btn-danger ycx" onclick="javascript :history.back(-1);">返回</button>
+```
+
+- 居中
+> - 文本内容居中：text-center
+> - 图片居中：center-block
+> - 其他类型元素居中：col-md-offset-X
 
